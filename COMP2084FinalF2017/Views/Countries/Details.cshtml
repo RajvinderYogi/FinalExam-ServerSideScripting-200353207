@@ -1,0 +1,66 @@
+﻿@model COMP2084FinalF2017.Models.Country
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Country</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Country
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Country1)
+        </dd>
+
+        <dt>
+            G
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gold)
+        </dd>
+
+        <dt>
+            S
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Silver)
+        </dd>
+
+        <dt>
+            B
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bronze)
+        </dd>
+
+        <dt>
+            Total Medals
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalMedals)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Flag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Flag)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
